@@ -1,1 +1,1 @@
-export * from './sobreNos'
+export * from './SobreNos'
