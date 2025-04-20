@@ -4,9 +4,10 @@ import { CampoTexto } from "../CampoTexto"
 
 import style from "./FormCriarTarefa.module.css"
 import { useAppContext } from "../../hooks"
+import { Loading } from "../Loading"
 
 function FormCriarTarefa() {
-    const { adicionarTarefa } = useAppContext()
+    const { adicionarTarefa, LoadingCriar, LoadingDeletar } = useAppContext()
 
     const [nomeTarefa, setNomeTarefa] = useState('')
 
@@ -29,7 +30,7 @@ function FormCriarTarefa() {
     return (
         <form className={style.FormCriarTarefa} onSubmit={submeterFormulario}>
             <CampoTexto value={nomeTarefa} onChange={onChanceNomeTarefa}/>
-            <Botao texto="+"/>
+            <Botao texto={LoadingCriar ? <Loading /> : '+'}/>
         </form>
     )
 }
