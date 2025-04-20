@@ -1,6 +1,9 @@
 import { Route, Routes } from "react-router-dom"
-import { Inicial, PaginaErro, SobreNos } from "./pages"
 import { LayoutPadrao } from "./layout/LayoutPadrao/LayoutPadrao"
+import { Inicial } from "./pages"
+import { sobreNos } from "./pages"
+import { PaginaErro } from "./pages"
+
 
 function Router() {
 
