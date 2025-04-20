@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import style from './cabecalho.module.css'
+import style from './Cabecalho.module.css'
 
 const Cabecalho = () => {
     return (
