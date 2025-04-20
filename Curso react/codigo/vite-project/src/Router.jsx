@@ -11,7 +11,7 @@ function Router() {
         <Routes>
             <Route path="/" element={<LayoutPadrao />}>
                 <Route path="/" element={<Inicial />} />
-                <Route path="SobreNos" element={<SobreNos />} />
+                <Route path="SobreNos" element={<sobreNos />} />
                 <Route path="*" element={<PaginaErro />} />
             </Route>
         </Routes>
